@@ -1056,8 +1056,8 @@
 
     function openEmailCompose(){
       const wo = (document.getElementById('workorder')?.value || '').toString().trim();
-      const frota = (document.getElementById('frota')?.value || '').toString().trim();
-      const trem = (document.getElementById('trem')?.value || '').toString().trim();
+      const frota = (document.getElementById('fleet')?.value || '').toString().trim();
+      const trem = (document.getElementById('train')?.value || '').toString().trim();
       const text = `Segue anexo checklist de Manutenção OS ${wo || ''}`.trim();
       const subject = `Manutenção Preventiva OS: ${wo}/${frota}-${trem}`.trim();
       const mailto = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
